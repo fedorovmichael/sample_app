@@ -40,6 +40,7 @@ group :development, :test do
   gem 'rspec-rails'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
+  gem 'factory_girl_rails'
 end
 
 group :development do

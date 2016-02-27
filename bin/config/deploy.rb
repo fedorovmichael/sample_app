@@ -3,9 +3,10 @@ lock '3.4.0'
 
 set :application, 'simpleapp'
 set :repo_url, 'https://github.com/fedorovmichael/sample_app.git'
-set :deploy_to, '/opt/www/simpleapp'
+set :deploy_to, '/home/miha/www'
 set :user, 'miha'
 set :linked_dirs, %w{log, tmp/pids, tmp/cache, tmp/sockets} 
+set :default_env, { rvm_bin_path: '~/.rvm/bin' }
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp

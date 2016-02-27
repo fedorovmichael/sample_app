@@ -56,8 +56,9 @@ group :test do
   gem 'capybara'
 end
 
-group :production do
+group :production, :development do
   gem 'pg'
   gem 'rails_12factor'
+  gem 'capistrano-rvm'
 end
 
